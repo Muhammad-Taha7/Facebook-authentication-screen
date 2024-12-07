@@ -25,12 +25,12 @@ body {
 }
 
 .text h2 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: #1877F2;
 }
 
 .text p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .form {
@@ -94,6 +94,8 @@ body {
     font-size: 1rem;
     width: 100%;
     border-bottom: 2px solid #E5E5E5;
+    padding-bottom: 10px;
+
 }
 
 .forget a {
@@ -106,7 +108,7 @@ body {
 }
 
 .btn2 {
-    width: 100%;
+    width: 60%;
     margin-top: 20px;
     padding: 15px;
     background-color: #42B72A;
@@ -128,9 +130,12 @@ body {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .text h2 {
+        text-align: center;
         font-size: 2.5rem;
     }
     .text p {
+        text-align: center;
+
         font-size: 1rem;
     }
     .form {
@@ -151,10 +156,12 @@ body {
 
 @media (max-width: 480px) {
     .text h2 {
-        font-size: 2rem;
+        text-align: center;
+        font-size: 3rem;
     }
     .text p {
-        font-size: 0.9rem;
+        text-align: center;
+        font-size: 1.2rem;
     }
     .form {
         max-width: 300px;
