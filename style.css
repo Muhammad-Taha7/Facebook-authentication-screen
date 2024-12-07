@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: #F0F2F5;
+    padding: 20px;
+}
+
+.text {
+    width: 100%;
+    max-width: 500px;
+}
+
+.text h2 {
+    font-size: 3rem;
+    color: #1877F2;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone,
+.password {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.phone input,
+.password input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 2px solid #E5E5E5;
+    transition: 0.75s;
+}
+
+.phone input:hover,
+.password input:hover {
+    border-color: #1877F2;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.btn button:hover {
+    background-color: blue;
+}
+
+.forget {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.forget a {
+    text-decoration: none;
+    color: #1877F2;
+}
+
+.forget a:hover {
+    border-bottom: 1px solid #1877F2;
+}
+
+.btn2 {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #42B72A;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.btn2 h2 {
+    font-size: 1rem;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: green;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .text h2 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .form {
+        max-width: 350px;
+    }
+    .phone input,
+    .password input {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+    .btn button {
+        font-size: 1rem;
+    }
+    .btn2 h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h2 {
+        font-size: 2rem;
+    }
+    .text p {
+        font-size: 0.9rem;
+    }
+    .form {
+        max-width: 300px;
+        padding: 15px;
+    }
+    .phone input,
+    .password input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .btn button {
+        font-size: 0.9rem;
+    }
+    .btn2 h2 {
+        font-size: 0.8rem;
+    }
+}
